@@ -81,7 +81,7 @@ const Tetris = () => {
       onKeyUp={keyUp}
     >
       <StyledTetris>
-        <Area gamecolor={gameOver ? 'red' : 'white'} area={map} />
+        <Area gamecolor={gameOver ? '255,0,0' : '255,255,255'} area={map} />
         <div className='start'>
           {gameOver ? (
             <Start callback={startGame} text="Start Again" />

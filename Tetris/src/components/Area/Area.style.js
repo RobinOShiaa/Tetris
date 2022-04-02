@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledArea = styled.div`
-  
   display: grid;
   grid-template-rows: repeat(
     ${props => props.height},
@@ -12,6 +11,7 @@ export const StyledArea = styled.div`
   border: 1px solid white;
   width: 100%;
   
+  
   max-width: 30vw;
-  background-color: ${props => props.gamecolor};
+  background-color: rgba(${props => props.gamecolor}, 0.4);
 `;
